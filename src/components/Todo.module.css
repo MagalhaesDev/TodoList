@@ -1,0 +1,144 @@
+.containerTodo {
+  max-width: 50rem;
+  margin: -1.6875rem auto;
+  padding: 0 2rem;
+}
+
+.formTodo {
+  width: 100%;
+  height: 3.375rem;
+  display: grid;
+  grid-template-columns: 1fr 5.625rem;
+  gap: 0.5rem;
+}
+
+.formTodo input {
+  border-radius: 8px;
+  border: none;
+  background: var(--gray-500);
+  padding: 1rem;
+  color: var(--gray-100);
+}
+
+.formTodo button {
+  border-radius: 8px;
+  border: none;
+  padding: 0 1rem;
+
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+.formTodo button:hover {
+  background: var(--blue);
+}
+
+.todoList {
+  margin-top: 4rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task p {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.task p:last-child {
+  color: var(--purple);
+}
+
+.task p span {
+  margin-left: 0.5rem;
+  background: var(--gray-400);
+  padding: 0.15rem 0.5rem;
+  color: var(--gray-100);
+  border-radius: 10px;
+}
+
+.todoItem {
+  background: var(--gray-500);
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.75rem;
+}
+
+.todoItem p {
+  min-width: 80%;
+}
+
+.todoItem ~ .todoItem {
+  margin-top: 0.75rem;
+}
+
+.todoItem img {
+  cursor: pointer;
+}
+
+.todoItem p {
+  word-wrap: break-word;
+  flex-grow: 1;
+}
+
+.todoItem p.checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.todoItem .trash {
+  color: var(--gray-300);
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.todoItem .trash:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .formTodo {
+    grid-template-columns: 1fr;
+  }
+
+  .formTodo button {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .todoList {
+    margin-top: 6rem;
+  }
+
+  .task {
+    display: block;
+  }
+
+  .task p {
+    margin-top: 0.75rem;
+  }
+
+  .todoItem p {
+    min-width: 70%;
+  }
+}
