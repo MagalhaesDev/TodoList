@@ -1,4 +1,4 @@
-![Logo of the project](https://github.com/MagalhaesDev/Criando-um-hook-de-carrinhos-de-compras/blob/master/src/assets/images/logo.svg)
+![Logo of the project](https://github.com/MagalhaesDev/TodoList/blob/main/src/assets/logo.svg)
 
 # TodoList
 
