@@ -2,7 +2,7 @@
 
 # TodoList
 
-This project was developed following the layout of the figma from the design Millena Kupsinskü, in the react track, application was totally developed from scratch since the html, css until the react components..
+This project was developed following the layout of the figma from the design Millena Kupsinskü, in the react track, application was totally developed from scratch since the html, css until the react components.
 
 ## Technology 
 
